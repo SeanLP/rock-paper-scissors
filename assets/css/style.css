@@ -16,4 +16,14 @@ body {
     color: #fff;
     margin-top: 50px;
     letter-spacing: 2px;
+    outline: 1px solid #000;
+}
+
+.container {
+    width: 50%;
+    background-color: #fff;
+    height: 400px;
+    margin: 100px auto 0 auto;
+    border-radius: 10px;
+    box-shadow: 7px 2px 9px 9px rgba(0,0,0,0.72);;
 }
