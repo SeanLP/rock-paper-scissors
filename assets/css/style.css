@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#645be7, #050b4b);
+    height: 100vh;
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
