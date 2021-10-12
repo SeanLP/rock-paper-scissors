@@ -7,23 +7,53 @@
 body {
     background: linear-gradient(#645be7, #050b4b);
     height: 100vh;
+    font-family: 'Lato', sans-serif;
 }
 
 .heading {
     text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #fff;
     margin-top: 50px;
     letter-spacing: 2px;
-    outline: 1px solid #000;
 }
 
 .container {
     width: 50%;
     background-color: #fff;
-    height: 400px;
+    height: 50vh;
     margin: 100px auto 0 auto;
     border-radius: 10px;
     box-shadow: 7px 2px 9px 9px rgba(0,0,0,0.72);;
+}
+
+.score-area {
+    margin: 40px auto;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.scores {
+    display: inline-block;
+    color: #fff;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+.your-score {
+    float: left;
+}
+
+.computer-score {
+    float: right;
+}
+
+#win {
+    color: #44ff00;
+    font-weight: bold;
+}
+
+#lose {
+    color: #ff0000;
+    font-weight: bold;
 }
