@@ -16,6 +16,7 @@ body {
     color: #fff;
     margin-top: 50px;
     letter-spacing: 2px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .container {
@@ -31,6 +32,8 @@ body {
     margin: 40px auto;
     width: 50%;
     font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .scores {
@@ -41,7 +44,7 @@ body {
 }
 
 .computer-score {
-    float: right;
+    text-align: right;
 }
 
 #win {
@@ -54,9 +57,21 @@ body {
     font-weight: bold;
 }
 
-.rules {
+#rules-heading {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #fff;
     letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+.rules {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.slash {
+    padding: 0 20px;
 }

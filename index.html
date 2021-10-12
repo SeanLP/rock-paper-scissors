@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +26,17 @@
 
     <div class="container">
 
+        <div class="hand-icons">
+            <button>
+                <i class="far fa-hand-rock"></i>
+            </button>
+            <button>
+                <i class="far fa-hand-paper"></i>
+            </button>
+            <button>
+                <i class="far fa-hand-scissors"></i>
+            </button>
+        </div>
     </div>
 
     <div class="score-area">
@@ -29,10 +45,10 @@
     </div>
 
     <footer>
-        <p class="rules">Rules</p>
+        <h2 id="rules-heading">Rules</h2>
         <br>
         <p class="rules">
-            Rock crushes Scissors // Paper covers Rock // Scissors cuts Paper
+            Rock crushes Scissors <span class="slash">//</span> Paper covers Rock <span class="slash">//</span> Scissors cuts Paper
         </p>
     </footer>
 
