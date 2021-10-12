@@ -40,10 +40,6 @@ body {
     letter-spacing: 1px;
 }
 
-.your-score {
-    float: left;
-}
-
 .computer-score {
     float: right;
 }
@@ -56,4 +52,11 @@ body {
 #lose {
     color: #ff0000;
     font-weight: bold;
+}
+
+.rules {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 2px;
 }
