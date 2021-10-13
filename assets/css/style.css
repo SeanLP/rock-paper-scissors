@@ -28,6 +28,13 @@ body {
     box-shadow: 7px 2px 9px 9px rgba(0,0,0,0.72);;
 }
 
+.outcome {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    padding-top: 40px;
+}
+
 .hand-icons {
     display: flex;
     justify-content: space-around;
