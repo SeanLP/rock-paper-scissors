@@ -112,6 +112,8 @@ footer {
     padding-bottom: 50px;
 }
 
+/* Media queries */
+
 @media only screen and (max-width: 860px) {
     .score-area {
         display: block;
