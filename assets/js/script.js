@@ -7,3 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 });
+
+function getUserChoice() {
+
+    const userChoice = document.getElementById("user-choice");
+
+    userChoice.innerText = this.getAttribute("id");
+
+}
