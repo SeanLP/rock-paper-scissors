@@ -11,7 +11,7 @@ const scoreboard = {
 };
 
 //   Plays the game
-function playGame(e) {
+function runGame(e) {
 
     const playerChoice = e.target.id;
     playerInput.innerHTML = playerChoice;
@@ -82,4 +82,4 @@ function showResult(winner, computerChoice) {
 }
 
 // Event Listener
-choices.forEach(choice => choice.addEventListener('click', playGame));
+choices.forEach(choice => choice.addEventListener('click', runGame));
