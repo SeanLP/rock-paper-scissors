@@ -1,4 +1,5 @@
-// Grabbing the variables
+// Declare constants for DOM elements
+
 const choices = document.querySelectorAll('.choice');
 const score = document.getElementById('score');
 const result = document.getElementById('result');
@@ -11,6 +12,7 @@ const scoreboard = {
 };
 
 //   Plays the game
+
 function runGame(e) {
 
     const playerChoice = e.target.id;
@@ -22,6 +24,7 @@ function runGame(e) {
 }
 
 // Generates the computer's random choice
+
 function getComputerChoice() {
 
     const random = Math.random();
@@ -36,6 +39,7 @@ function getComputerChoice() {
 }
 
 // Determines the game winner
+
 function getWinner(playerChoice, computerChoice) {
 
     if (playerChoice === computerChoice) {
@@ -63,6 +67,7 @@ function getWinner(playerChoice, computerChoice) {
 }
 
 // Shows the result by updating the scores
+
 function showResult(winner, computerChoice) {
 
     if (winner === 'You Win') {
@@ -87,6 +92,7 @@ function showResult(winner, computerChoice) {
 }
 
 // Restarts the game
+
 function restartGame() {
     scoreboard.player = 0;
     scoreboard.computer = 0;
@@ -94,9 +100,9 @@ function restartGame() {
         <p>Your Score: 0</p>
         <p>Computer Score: 0</p>
     `;
-    result.style.display = 'none';
 }
 
 // Event Listener
+
 choices.forEach(choice => choice.addEventListener('click', runGame));
 restart.addEventListener('click', restartGame);
