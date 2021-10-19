@@ -4,7 +4,7 @@ const score = document.getElementById('score');
 const result = document.getElementById('result');
 const playerInput = document.getElementById('user-choice');
 const compInput = document.getElementById('computer-choice');
-
+const restart = document.getElementById('restart');
 const scoreboard = {
     player: 0,
     computer: 0
@@ -86,5 +86,17 @@ function showResult(winner, computerChoice) {
     `;
 }
 
+// Restarts the game
+function restartGame() {
+    scoreboard.player = 0;
+    scoreboard.computer = 0;
+    score.innerHTML = `
+        <p>Your Score: 0</p>
+        <p>Computer Score: 0</p>
+    `;
+    result.style.display = 'none';
+}
+
 // Event Listener
 choices.forEach(choice => choice.addEventListener('click', runGame));
+restart.addEventListener('click', restartGame);
