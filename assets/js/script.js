@@ -1,60 +1,28 @@
-// document.addEventListener("DOMContentLoaded", function() {
-
-//     const buttons = document.getElementsByTagName("button");
-//     const result = document.getElementById("result");
-
-//     for (let button of buttons) {
-//         button.addEventListener("click", getUserChoice);
-
-//     }
-
-
-// });
-
-// function getUserChoice() {
-
-//     const userChoice = document.getElementById("user-choice");
-
-//     userChoice.innerText = this.getAttribute("id");
-
-//     computerChoice();
-
-// }
-
-// function computerChoice() {
-    
-//     const choices = ["Rock", "Paper", "Scissors"];
-
-//     const computerInput = choices[Math.floor(Math.random() * 3)];
-
-//     document.getElementById("computer-choice").innerHTML = `${computerInput}`;
-// }
-
+// Grabbing the variables
 const choices = document.querySelectorAll('.choice');
-const score = document.getElementById('scores');
+const score = document.getElementById('score');
 const result = document.getElementById('result');
 const playerInput = document.getElementById('user-choice');
 const compInput = document.getElementById('computer-choice');
 
-// const scoreboard = {
-//     player: 0,
-//     computer: 0
-//   };
+const scoreboard = {
+    player: 0,
+    computer: 0
+};
 
-  function playGame(e) {
-      
+//   Plays the game
+function playGame(e) {
+
     const playerChoice = e.target.id;
     playerInput.innerHTML = playerChoice;
     const computerChoice = getComputerChoice();
     compInput.innerHTML = computerChoice;
     const winner = getWinner(playerChoice, computerChoice);
+    showResult(winner, computerChoice);
+}
 
-    console.log(playerChoice, computerChoice, winner)
-    result.innerHTML = winner;
-
-  }
-
-  function getComputerChoice() {
+// Generates the computer's random chlice
+function getComputerChoice() {
 
     const random = Math.random();
 
@@ -65,9 +33,10 @@ const compInput = document.getElementById('computer-choice');
     } else {
         return 'Scissors';
     }
-  }
+}
 
-  function getWinner(playerChoice, computerChoice) {
+// Determines the game winner
+function getWinner(playerChoice, computerChoice) {
 
     if (playerChoice === computerChoice) {
         return 'Draw';
@@ -91,6 +60,26 @@ const compInput = document.getElementById('computer-choice');
             return 'You Win';
         }
     }
-  }
+}
 
-  choices.forEach(choice => choice.addEventListener('click', playGame));
+// Shows the result by updating the scores
+function showResult(winner, computerChoice) {
+
+    if (winner === 'You Win') {
+        scoreboard.player++;
+        result.innerHTML = 'You Win';
+    } else if (winner === 'You Lose') {
+        scoreboard.computer++;
+        result.innerHTML = 'You Lose';
+    } else {
+        result.innerHTML = 'Its a Draw';
+    }
+
+    score.innerHTML = `
+    <p>Your Choice: ${scoreboard.player}</p>
+    <p>Computer Choice: ${scoreboard.computer}</p>
+    `;
+}
+
+// Event Listener
+choices.forEach(choice => choice.addEventListener('click', playGame));
