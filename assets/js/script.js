@@ -21,7 +21,7 @@ function runGame(e) {
     showResult(winner, computerChoice);
 }
 
-// Generates the computer's random chlice
+// Generates the computer's random choice
 function getComputerChoice() {
 
     const random = Math.random();
@@ -68,16 +68,21 @@ function showResult(winner, computerChoice) {
     if (winner === 'You Win') {
         scoreboard.player++;
         result.innerHTML = 'You Win';
+        result.style.cssText = 'color: #44ff00; background-color: #171717; padding: 5px 10px; border-radius: 3px';
+
     } else if (winner === 'You Lose') {
         scoreboard.computer++;
         result.innerHTML = 'You Lose';
+        result.style.cssText = 'color: #fa0505; background-color: #171717; padding: 5px 10px; border-radius: 3px';
+
     } else {
-        result.innerHTML = 'Its a Draw';
+        result.innerHTML = "It's a Draw";
+        result.style.cssText = 'color: #fff; background-color: #171717; padding: 5px 10px; border-radius: 3px';
     }
 
     score.innerHTML = `
-    <p>Your Choice: ${scoreboard.player}</p>
-    <p>Computer Choice: ${scoreboard.computer}</p>
+    <p>Your Score: ${scoreboard.player}</p>
+    <p>Computer Score: ${scoreboard.computer}</p>
     `;
 }
 

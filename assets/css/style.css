@@ -104,14 +104,15 @@ footer {
 /* Media queries */
 
 @media only screen and (max-width: 860px) {
-    .score-area {
+    .score {
         display: block;
         text-align: center;
     }
 
-    .computer-score {
+    .score p:last-child {
         display: block;
         text-align: center;
+        padding-top: 20px;
     }
 
     .container {
@@ -144,9 +145,3 @@ footer {
     }
 }
 
-@media only screen and (max-width: 430px) {
-    #win, #lose {
-        display: block;
-        padding: 20px 0;
-    }
-}
