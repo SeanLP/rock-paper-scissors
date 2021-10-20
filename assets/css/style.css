@@ -14,39 +14,28 @@ body {
 
 .heading {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     color: #fff;
     margin-top: 50px;
     letter-spacing: 2px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-/* Reset button */
-
-.reset-btn {
-    color: #fff;
-    background-color: #171717;
-    font-size: 1.2rem;
-    display: block;
-    margin: 50px auto 20px auto;
-    letter-spacing: 1px;
-    padding: 7px 14px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.reset-btn:hover {
-    background-color: #fff;
-    color: #171717;
-}
-
 /* Game area */
+
+.pick-hand {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 70px;
+}
 
 .container {
     width: 60%;
     background-color: #fff;
     height: 400px;
-    margin: 100px auto 0 auto;
+    margin: 60px auto 0 auto;
     border-radius: 10px;
     box-shadow: 7px 2px 9px 9px rgba(0,0,0,0.72);;
 }
@@ -99,6 +88,32 @@ body {
 .score p:last-child {
     text-align: right;
 }
+
+/* Reset button */
+
+.reset-area {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.reset-btn {
+    color: #fff;
+    background-color: #171717;
+    font-size: 1.2rem;
+    display: block;
+    margin: 50px auto 20px auto;
+    letter-spacing: 1px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background-color: #fff;
+    color: #171717;
+}
+
 
 /* Rule area */
 

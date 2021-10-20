@@ -8,10 +8,22 @@ Users of this game will learn the rules of Rock Paper Scissors so that they can 
 
 ## Features
 ---
-* **Header**
+* **The Header**
 
     * Featured at the top of the page, the header shows the game name in a font and style that clearly contrasts with the background.
 
     * The header clearly tells the user what game they are playing.
 
-![Header]()
+![Header](https://seanlp.github.io/rock-paper-scissors/assets/images/rps-header.png)
+
+* **The Game Area**
+
+    * Featured at the top of the game area is a heading telling the user to make a choice below, where there are three options that give the user a hand to pick from: Rock, Paper or Scissors. These options are interactive buttons that the user can click to make their choice.
+
+    * This section provides interactive buttons that the user can click to make their choice and play the game.
+
+![Game-Area](https://seanlp.github.io/rock-paper-scissors/assets/images/game-area.png)
+
+* **The Game Results**
+
+    * 
