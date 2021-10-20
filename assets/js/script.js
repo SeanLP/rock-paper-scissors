@@ -1,11 +1,12 @@
 // Declare constants for DOM elements
+/*jshint esversion: 6 */
 
 const choices = document.querySelectorAll('.choice');
 const score = document.getElementById('score');
 const result = document.getElementById('result');
 const playerInput = document.getElementById('user-choice');
 const compInput = document.getElementById('computer-choice');
-const restart = document.getElementById('restart');
+const reset = document.getElementById('reset');
 const scoreboard = {
     player: 0,
     computer: 0
@@ -44,19 +45,21 @@ function getWinner(playerChoice, computerChoice) {
 
     if (playerChoice === computerChoice) {
         return 'Draw';
+
     } else if (playerChoice === 'Rock') {
         if (computerChoice === 'Paper') {
             return 'You Lose';
-
         } else {
             return 'You Win';
         }
+
     } else if (playerChoice === 'Paper') {
         if (computerChoice === 'Scissors') {
             return 'You Lose';
         } else {
             return 'You Win';
         }
+
     } else if (playerChoice === 'Scissors') {
         if (computerChoice === 'Rock') {
             return 'You Lose';
@@ -91,9 +94,10 @@ function showResult(winner, computerChoice) {
     `;
 }
 
-// Restarts the game
+// Resets the score
 
-function restartGame() {
+function resetScore() {
+
     scoreboard.player = 0;
     scoreboard.computer = 0;
     score.innerHTML = `
@@ -102,7 +106,7 @@ function restartGame() {
     `;
 }
 
-// Event Listener
+// Event Listeners
 
 choices.forEach(choice => choice.addEventListener('click', runGame));
-restart.addEventListener('click', restartGame);
+reset.addEventListener('click', resetScore);
