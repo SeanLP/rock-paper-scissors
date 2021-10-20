@@ -8,19 +8,19 @@ Users of this game will learn the rules of Rock Paper Scissors so that they can 
 
 ## Features
 ---
-* **The Header**
+* **The Heading**
 
-    * Featured at the top of the page, the header shows the game name in a font and style that clearly contrasts with the background.
+    * Featured at the top of the page, the heading shows the game name in a font and style that clearly contrasts with the background.
 
-    * The header clearly tells the user what game they are playing.
+    * The heading clearly tells the user what game they are playing.
 
-![Header](https://seanlp.github.io/rock-paper-scissors/assets/images/rps-header.png)
+![Heading](https://seanlp.github.io/rock-paper-scissors/assets/images/rps-header.png)
 
 * **The Game Area**
 
     * Featured at the top of the game area is a heading telling the user to make a choice below, where there are three options that give the user a hand to pick from: Rock, Paper or Scissors. These options are interactive buttons that the user can click to make their choice.
 
-    * This section provides interactive buttons that the user can click to make their choice and play the game. When hovered these buttons change size and color so that they are more identifiable by the user.
+    * This section provides interactive buttons that the user can click to make their choice and play the game. When hovered these buttons change size, color and have a title so that they are more identifiable by the user.
 
 ![Game-Area](https://seanlp.github.io/rock-paper-scissors/assets/images/game-area.png)
 
@@ -43,3 +43,29 @@ Users of this game will learn the rules of Rock Paper Scissors so that they can 
     * This allows the user to reset the score without having to reload the page.
 
 ![Reset-Score](https://seanlp.github.io/rock-paper-scissors/assets/images/reset-score.png)
+
+* **The Footer**
+
+    * The footer section shows the rules of the Rock, Paper, Scissors game.
+
+    * The footer is valuable to the user beacuse it clearly explains how the game is played.
+
+![Footer](https://seanlp.github.io/rock-paper-scissors/assets/images/rules.png)
+
+## Features Left To Implement
+
+* When there is time, I would like to expand this game to feature the Lizard and Spock options from The Big Bang Theory tv show.
+
+## Testing
+---
+* I tested playing this game in different browsers: Chrome, Safari and Firefox.
+
+* I confirmed that the game results are always correct.
+
+* I confirmed that the heading, options, results and footer text are all readable and easy to understand.
+
+* I confirmed that this project is responsive, looks good and functions on all standard devices using the devtools devices toolbar.
+
+* I confirmed the colors and font chosen are easy to read and accessible by running it through lighthouse in devtools.
+
+![Lighthouse](https://seanlp.github.io/rock-paper-scissors/assets/images/lighthouse-results.png)
