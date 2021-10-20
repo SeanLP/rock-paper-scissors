@@ -4,7 +4,7 @@ Rock, Paper, Scissors is a game to help friends, colleagues and family members m
 
 Users of this game will learn the rules of Rock Paper Scissors so that they can apply decision making with others in their lives. This site will be targeted towards adults and children alike as a simple app to learn, practice and have fun with.
 
-![Responsive-Website]()
+![Responsive-Website](https://seanlp.github.io/rock-paper-scissors/assets/images/rps-responsive.png)
 
 ## Features
 ---
@@ -69,3 +69,49 @@ Users of this game will learn the rules of Rock Paper Scissors so that they can 
 * I confirmed the colors and font chosen are easy to read and accessible by running it through lighthouse in devtools.
 
 ![Lighthouse](https://seanlp.github.io/rock-paper-scissors/assets/images/lighthouse-results.png)
+
+## Bugs
+---
+**Solved Bugs**
+
+* I discovered when I tried to use the reset button the scores would not reset.
+
+* I fixed this by adding and event listener to the reset constant: reset.addEventListener('click', resetScore);
+
+## Validator Testing
+---
+* **HTML**
+
+    * No errors were returned when passing through the official W3C validator.
+
+* **CSS**
+
+    * No errors were found when passing through the official (Jigsaw) validator.
+
+* **JS**
+
+    * No errors were found when passing through JSHint.
+
+## Unfixed Bugs
+---
+* No unfixed bugs.
+
+## Deployment
+---
+* The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+    * In the GitHub repository, navigate to the settings tab.
+
+    * From the source section drop-down menu, select the Master Branch.
+
+    * Once the master branch has been selected, the page provided the link to the completed website.
+
+    * The live link can be found here - [Rock Paper Scissors](https://seanlp.github.io/rock-paper-scissors/).
+
+## Credits
+---
+### Content
+
+* The icons in the game area were taken from [Font Awesome](https://fontawesome.com/).
+
+* Parts of the code to make the Javascript were taken from [YouTube](https://www.youtube.com/watch?v=WR_pWXJZiRY).
