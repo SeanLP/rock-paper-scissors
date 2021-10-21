@@ -25,6 +25,7 @@ function runGame(e) {
 }
 
 // Generates the computer's random choice
+// Parts of code was used from a YouTube video (https://www.youtube.com/watch?v=WR_pWXJZiRY)
 
 function getComputerChoice() {
 
