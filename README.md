@@ -92,6 +92,16 @@ Users of this game will learn the rules of Rock Paper Scissors so that they can 
 
     * No errors were found when passing through JSHint.
 
+    * The following metrics were returned.
+
+        * There are 6 functions in this file.
+
+        * Function with the largest signature take 2 arguments, while the median is 1.
+
+        * Largest function has 11 statements in it, while the median is 5.5.
+
+        * The most complex function has a cyclomatic complexity value of 8 while the median is 2.
+
 ## Unfixed Bugs
 ---
 * No unfixed bugs.
